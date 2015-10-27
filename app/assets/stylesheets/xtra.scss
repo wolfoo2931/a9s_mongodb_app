@@ -1,11 +1,11 @@
 a {
-  color: #000;
+  color: $brand-blue;
   font-weight: bold;
   text-decoration: none;
 
   &:hover {
     text-decoration: none;
-    color: #069;
+    color: lighten($brand-blue, 10%);
   }
 }
 
@@ -16,32 +16,43 @@ h1 {
 h2 { font-size: 42px;}
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia;
-  font-weight: normal;
+  font-family: $font;
+  font-weight: $font-weight;
 
   a {
-    color: #000;
+    color: $brand-blue;
 
     &:visited {
-      color: #000;
+      color: $brand-blue;
     }
 
     &:hover {
       text-decoration: none;
       background: none;
-      color: #069;
+      color: lighten($brand-blue, 10%);
     }
   }
 }
 
 
 p {
-  font: 18px/24px sans-serif;
-  color: #333
+  font {
+    family: $font;
+    weight: $font-weight;
+  }
+  line-height: $line-height;
+  color: $brand-blue
 }
 
-.container {
-  margin-bottom: 80px;
+.navbar-brand {
+  img {
+    width: 100%;
+  }
+}
+
+.content {
+  margin-top: $gutter * 2;
+  margin-bottom: $gutter * 2;
 }
 
 .footer {
@@ -50,14 +61,15 @@ p {
   position: fixed;
   bottom: 0;
   width: 100%;
-  color: #fff;
+  color: $off-white;
   height: 90px;
+  background: $brand-blue;
 
   a {
-    color: #fff;
+    color: $off-white;
 
     &:hover {
-      color: #00aaff;
+      color: transparentize($off-white, .25);
     }
   }
 }
@@ -79,6 +91,13 @@ p {
     float: right;
     text-align: right;
   }
+}
+
+.actions {
+  padding: $gutter/2 0;
+  border-top: 1px solid $separator-color;
+  border-bottom: 1px solid $separator-color;
+  margin: $gutter 0;
 }
 
 .actions a {
