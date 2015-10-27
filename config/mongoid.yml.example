@@ -139,9 +139,9 @@ development:
   clients:
     default:
       database: <%= creds['default_database'] %>
-      username: <%= creds['username'] %>
-      password: <%= creds['password'] %>
       hosts: <%= creds['hosts'].to_json %>
       options:
         raise_not_found_error: false
+        user: <%= creds['username'] %>
+        password: <%= creds['password'] %>
 
