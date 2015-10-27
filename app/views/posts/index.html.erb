@@ -12,9 +12,7 @@
       <div class="title">
         <h2><%= link_to post.title, post_path(post) %></h2>
       </div>
-      <div class="body">
-        <p><%= simple_format truncate(post.body, length: 750) %></p>
-      </div>
+      <div class="body"><%= post.body.html_safe %></div>
 
       <div class="post-footer">
         <span class="timestamps">
