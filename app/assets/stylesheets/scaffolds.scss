@@ -1,21 +1,31 @@
+$brand-blue: #505d78;
+$brand-orange: #e4833e;
+$font: Lato, sans-serif;
+$font-weight: 300;
+$font-weight-header: 700;
+$font-size: 100%;
+$line-height: 160%;
+$off-white: #f8f8f8;
+$separator-color: #f2f2f2;
+$gutter: 1rem;
+
 body {
-  background-color: #fff;
-  color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+  background-color: $off-white;
+  color: $brand-blue;
+  font-family: $font;
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+  font-family: $font;
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
 pre {
   background-color: #eee;
   padding: 10px;
-  font-size: 11px;
 }
 
 div {
@@ -25,7 +35,7 @@ div {
 }
 
 .navbar {
-  background-color: #006699;
+  background-color: $brand-blue;
   height: 90px;
 }
 
@@ -45,7 +55,7 @@ div {
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
-  background-color: #f0f0f0;
+  background-color: $off-white;
 
   h2 {
     text-align: left;
