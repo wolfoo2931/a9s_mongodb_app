@@ -8,9 +8,9 @@
   </div>
 </div>
 
-<p>
-  <%= simple_format @post.body %>
-</p>
+<div class="post-body">
+  <%= @post.body.html_safe %>
+</div>
 
 <div class="post-footer">
   <span class="timestamps">

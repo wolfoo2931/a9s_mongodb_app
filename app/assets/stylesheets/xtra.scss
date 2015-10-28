@@ -52,7 +52,7 @@ p {
 
 .content {
   margin-top: $gutter * 2;
-  margin-bottom: $gutter * 2;
+  margin-bottom: $gutter * 6;
 }
 
 .footer {
@@ -111,5 +111,47 @@ p {
 
 .rAlign {
   text-align: right;
+}
+
+.post-body {
+  .post-content {
+    width: 83%;
+    padding-left: 6px;
+  }
+
+  .image {
+    width: 17%;
+    padding-left: 6px;
+  }
+}
+
+.fRight {
+  float: right;
+}
+
+.fLeft {
+  float: left;
+}
+
+table {
+  th, td {
+    padding: 1em 0.5em;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  tbody {
+    td.table-line {
+      text-align: left;
+    }
+  }
+}
+
+.features td.merged-line {
+  background: #F8F8F8 none repeat scroll 0% 0% !important;
+}
+
+.features tr:nth-child(2n), .features td:nth-child(2n), .features th:nth-child(2n) {
+  background: rgba(80, 93, 120, 0.04) none repeat scroll 0% 0%;
 }
 
